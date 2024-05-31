@@ -89,7 +89,7 @@ func findRecordByNameAndType(hostName string, recType string, records []dnsRecor
 
 // Searches for a record with the given host name, record type and priority in the given records.
 // Only the first one found is returned.
-func findRecordByNameAndTypeAndPriority(hostName string, recType string, priority int, records []dnsRecord) *dnsRecord {
+func findRecordByNameAndTypeAndPriority(hostName string, recType string, priority uint, records []dnsRecord) *dnsRecord {
 	for _, record := range records {
 		if record.HostName == hostName && record.RecType == recType && record.Priority == priority {
 			return &record

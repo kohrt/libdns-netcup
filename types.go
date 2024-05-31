@@ -12,7 +12,7 @@ type dnsRecord struct {
 	ID           string `json:"id"`
 	HostName     string `json:"hostname"`
 	RecType      string `json:"type"`
-	Priority     int    `json:"priority,string"`
+	Priority     uint   `json:"priority,string"`
 	Destination  string `json:"destination"`
 	DeleteRecord bool   `json:"deleterecord"`
 }
